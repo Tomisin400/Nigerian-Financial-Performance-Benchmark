@@ -19,7 +19,7 @@
 
 ---
 
-## 📌 Does Having the Highest Revenue Actually Mean Having the Strongest Financial Performance?
+## 📌 Does the company with the highest revenue necessarily have the strongest financial performance?
 
 This project started with a simple idea: compare the financial performance of major Nigerian companies and identify the strongest performer.
 
