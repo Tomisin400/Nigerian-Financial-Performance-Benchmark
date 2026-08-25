@@ -167,7 +167,8 @@ This page provides a high-level view of revenue, net income, profitability and o
 - Strongest Overall Performer: GTCO
 
 
-<img width="1381" height="772" alt="NGF 1 1" src="https://github.com/user-attachments/assets/e6159bd6-27cc-4d74-b151-070d3719608b" />
+<img width="1388" height="781" alt="NGF1 1 1" src="https://github.com/user-attachments/assets/667e2c53-7b23-489b-ade3-61d6449c8ba8" />
+
 
 
 
