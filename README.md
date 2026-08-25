@@ -95,7 +95,7 @@ The dataset contains annual financial information for four Nigerian companies fr
 - Total Assets
 - Shareholders' Equity
 
-Unit: ₦ millions
+ **Unit:** ₦ millions in the source dataset. Monetary values are displayed in **₦ trillions** on the dashboard for readability.
 
 Data Source: StockAnalysis.com
 
@@ -129,10 +129,16 @@ Measures how effectively a company generates profit from its assets.
 
 Net Income ÷ Total Assets × 100
 
+> **Methodology Note:** ROA was calculated using year-end total assets because the dataset did not include 2020 balance-sheet figures required to calculate consistent average assets across the full 2021–2025 period. While average assets are generally preferred when both beginning and ending balances are available, year-end assets were used consistently across all five years in this analysis.
+
 ### ROE
 Measures the return generated on shareholders' equity.
 
 Net Income ÷ Shareholders Equity × 100
+
+> **Methodology Note:** ROE was calculated using year-end shareholders' equity because the dataset did not include 2020 balance-sheet figures required to calculate consistent average equity across the full 2021–2025 period. While average shareholders' equity is generally preferred when both beginning and ending balances are available, year-end equity was used consistently across all five years in this analysis.
+
+> **Why year-end balances were used:** The standard average-balance approach uses the beginning and ending balances: `(Beginning Balance + Ending Balance) ÷ 2`. Since 2020 balance-sheet figures were unavailable, applying this method consistently to the full 2021–2025 period was not possible. Using year-end balances consistently therefore provided a transparent and consistent basis for the analysis.
 
 ### Expense Ratio
 Measures the proportion of revenue consumed by total expenses.
@@ -155,8 +161,8 @@ This page provides a high-level view of revenue, net income, profitability and o
 
 #### Key KPIs
 
-- Total Revenue: ₦32.42M
-- Total Net Income: ₦9.18M
+- Total Revenue: ₦32.42T
+- Total Net Income: ₦9.18T
 - Average Profit Margin: 34.38%
 - Strongest Overall Performer: GTCO
 
@@ -250,7 +256,7 @@ The weighted score is out of 100, with a higher score representing stronger perf
 
 ### 1. MTN Nigeria Generated the Highest Revenue, But GTCO Had the Strongest Overall Performance
 
-MTN Nigeria recorded approximately ₦14.7M in total revenue, making it the highest-revenue company in the dataset.
+MTN Nigeria recorded approximately ₦14.73T in total revenue, making it the highest-revenue company in the dataset.
 
 However, MTN did not achieve the highest weighted performance score.
 
@@ -276,11 +282,11 @@ The combination of strong profitability and relatively low expenses contributed 
 
 ### 3. MTN Nigeria Recorded an Unusually High ROE
 
-MTN Nigeria recorded an average ROE of 149.79%, significantly higher than the other companies analysed.
+MTN Nigeria recorded an average **ROE of 149.79%**, significantly higher than the other companies analysed.
 
 However, this figure was not treated as automatic evidence that MTN was the strongest performer.
 
-The unusually high ROE was influenced by the relatively low shareholders' equity base during the period, making the ratio highly sensitive to changes in equity.
+The unusually high ROE was influenced by MTN Nigeria's shareholders' equity position during the period, particularly following significant foreign exchange losses associated with the Naira devaluation. A relatively low or negative equity base can make ROE highly sensitive to changes in net income.
 
 This is why ROE was interpreted alongside:
 
@@ -289,9 +295,9 @@ This is why ROE was interpreted alongside:
 - Revenue Growth
 - Expense Ratio
 
-Rather than treating ROE as a standalone measure of performance.
+rather than treating ROE as a standalone measure of performance.
 
-> A very high ROE does not always mean stronger underlying performance. The size and stability of the equity base also matter.
+> **A very high ROE does not always mean stronger underlying performance. The size and stability of the equity base also matter.**
 
 
 ### 4. Growth and Profitability Tell Different Stories
@@ -313,11 +319,14 @@ GTCO's cost efficiency was a key contributor to its strong overall benchmark per
 
 
 
+
 ### 6. MTN Nigeria's Recovery in 2025
 
-MTN Nigeria recorded net losses in both 2023 (−₦133.8B) and 2024 (−₦399.4B) due to significant foreign exchange losses following the Naira devaluation. Despite growing revenue in both years, the FX impact wiped out profitability entirely.
+MTN Nigeria recorded significant net losses in 2023 and 2024, primarily driven by foreign exchange losses following the sharp devaluation of the Nigerian naira. Despite continued revenue growth, the resulting foreign exchange impact significantly affected profitability during the period.
 
-MTN recovered strongly in 2025, recording net income of ₦1.1T — its strongest profit result in the five-year period.
+MTN recovered strongly in 2025, recording approximately **₦1.1 trillion in net income**, its strongest profit result during the five-year period.
+
+This recovery highlights the importance of looking beyond a single year's performance when evaluating financial strength.
 
 
 
@@ -347,7 +356,7 @@ These recommendations should be interpreted within the context of each company's
 
 ##  Important Limitation
 
-The companies analysed do not operate within the same industry.
+1. The companies analysed do not operate within the same industry.
 
 GTCO, Zenith Bank and UBA operate in banking, while MTN Nigeria operates in telecommunications.
 
@@ -362,6 +371,17 @@ Metrics such as ROA, ROE and expense ratio should therefore be interpreted withi
 - Banks naturally carry much larger balance sheets, which suppresses ROA
 - MTN's higher ROA reflects its asset-light telecom business model, not necessarily superior financial performance
 - MTN's negative shareholders equity in 2023 and 2024 was caused by foreign exchange losses following the Naira devaluation
+
+2. ### ROA and ROE Calculation Limitation
+
+ROA and ROE are commonly calculated using average total assets and average shareholders' equity when both beginning and ending balances are available.
+
+However, the dataset begins in 2021 and does not include 2020 balance-sheet figures. This means consistent average-balance calculations could not be performed across the full 2021–2025 period.
+
+Therefore, year-end total assets and year-end shareholders' equity were used consistently for the ROA and ROE calculations.
+
+This means the ROA and ROE figures in this project should be interpreted as returns based on year-end balances rather than average-balance return measures.
+
 
 ### Interpreting ROE
 
